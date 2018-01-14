@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cheat Sheet (Bootstrap)</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<style>
+	#box{
+		border:1px solid green;
+	}
+	</style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+		<!-- For small screen dropdowns  -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">My Website</a>
+        </div>
+
+    <!-- TOPSTRIP/DROPDOWN OPTIONS -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">A link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">option 1</a></li>
+                <li><a href="#">option 2</a></li>
+                <li><a href="#">option 3</a></li>
+				<li><a href="#">option 4</a></li>
+                <li><a href="#">option 5</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	<!-- TOPSTRIP/DROPDOWNS OPTIONS ENDS HERE>
+	
+	
+
+    <!-- JUMBOTRON -->
+    <div class="jumbotron" style="text-align:center">
+      <div class="container">
+        <h1>Website Intro (Or you can put carousal here)</h1>
+        <a href="#" class="btn btn-primary">Signup or Login or whatever</a>
+      </div>
+    </div>
+	<!-- JUMBOTRON ENDS HERE -->
+	
+	<!-- DEMO MODEL -->
+	<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="margin:0px 40%">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Here you can put the containts you want people to know !!!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	
+    
+    <div class="container">
+      <h1 class="page-header">Some headings <small>with some text</small></h1>
+	  <span style="color:red;word-spacing:5px">Again some text in span</span>
+      <p>This paragraph basically deals with <mark> styling the contents 
+	  of a paragraph</mark>.You can even do <del>this</del> or even <u>this</u> or even <strong> this also</strong></p>
+
+      <hr><!-- DRAWS A HORIZONTAL LINE -->
+
+      <!-- TEXT TRANSFORMATIONS -->
+	  <h1 class="text-center text-uppercase">Center aligned text.</h1>
+      <h2 class="text-left text-lowercase">Left aligned text.</h2>
+      <h3 class="text-right text-capitalize">Right aligned text.</h3>
+      <h4 class="text-justify">Justified text.</h4>
+      <h5 class="text-nowrap">No wrap text.</h5>
+	  <h6>No Styling.</h6>
+
+	  
+	  <hr>
+      <!-- FLOATING DIVISIONS -->
+      <div class="pull-right">Div floated to right</div>
+      <div class="pull-left">Div floated to left</div>
+	
+	  <br> <!-- USED TO BREAK THE CURRENT LINE -->
+
+      <hr>
+
+      <!-- LISTS STYLES -->
+      <ul class="list-unstyled">
+        <li>option 1</li>
+        <li>option 2</li>
+        <li>option 3</li>
+        <li>option 4</li>
+      </ul>
+
+      <ul class="list-inline">
+        <li>choice 1</li>
+        <li>choice 2</li>
+        <li>choice 3</li>
+        <li>choice 4</li>
+      </ul>
+
+	  <hr>
+	  
+      <!-- SPECIAL HIGHLIGHTS -->
+      Copy contents with <kbd>ctrl + c</kbd><br>
+	  Paste contents with <kbd>ctrl + v</kbd><br>
+
+	  <hr>
+
+      <!-- BLOCKQUOTE -->
+      <blockquote class="blockquote-reverse">
+        <p>An apple a day keeps the doctor away.</p>
+         <footer>Quote by <cite title="Jerry">Jerry</cite></footer>
+      </blockquote>
+
+	  
+      <hr>
+	
+	<!-- BREADCRUMBS -->
+	<h4>BREADCRUMBS</h4><br>
+	<nav aria-label="breadcrumb">
+	<ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Home</li>
+	</ol>
+	</nav>
+
+	<nav aria-label="breadcrumb">
+	<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Library</li>
+	</ol>
+	</nav>
+
+	<nav aria-label="breadcrumb">
+	<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+	</ol>
+	</nav>
+	  
+	  <hr>
+	  
+      <!-- CONTEXTUAL COLORS -->
+      <p class="text-primary">Hello World</p>
+      <p class="text-success">Hello World</p>
+      <p class="text-info">Hello World</p>
+      <p class="text-warning">Hello World</p>
+      <p class="text-danger">Hello World</p>
+      <p class="text-muted">Hello World</p>
+
+	  <hr>
+	  
+      <!-- CONTEXTUAL BACKGROUND COLORS -->
+      <p class="bg-primary">Hello World</p>
+      <p class="bg-success">Hello World</p>
+      <p class="bg-info">Hello World</p>
+      <p class="bg-warning">Hello World</p>
+      <p class="bg-danger">Hello World</p>
+      <p class="bg-muted">Hello World</p>
+    </div>
+
+    <hr>
+	
+    <!-- BUTTONS -->
+    <div class="container">
+	<h3>NOW LET'S CREATE SOME BUTTONS </h3><br>
+      <button class="btn btn-default">Button</button> &emsp;
+      <a href="#" class="btn btn-default" role="button">Link</a> &emsp;
+      <input type="submit" class="btn btn-default" value="Submit">
+      
+	  <hr>
+	  
+	  <!-- BUTTON SIZES -->
+	  <h4> BUTTONS SIZE </h4><br>
+      <button class="btn btn-default btn-lg">Default</button> &emsp;
+      <button class="btn btn-default">Default</button> &emsp;
+      <button class="btn btn-primary btn-sm">Default</button> &emsp;
+      <button class="btn btn-default btn-xs" disabled="disabled">Default</button> &emsp;
+	  
+      <hr>
+	  <!-- CONTEXTUAL BUTTONS -->
+      <h4> BUTTONS COLOR </h4><br>
+      <button class="btn btn-default">Default</button> &emsp;
+      <button class="btn btn-primary">Primary</button> &emsp;
+      <button class="btn btn-success">Success</button> &emsp;
+      <button class="btn btn-info">Info</button> &emsp;
+      <button class="btn btn-warning">Warning</button> &emsp;
+      <button class="btn btn-danger">Delete</button> &emsp;
+	  
+    </div>
+
+    <hr>
+
+    <!-- FORMS -->
+    <div class="container">
+	<h3> NOW COMING TO THE FORMS	 </h3><br>
+      <form>
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control" placeholder="Add Name">
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" class="form-control" placeholder="Add Email">
+        </div>
+
+        <div class="form-group">
+          <label>Comments</label>
+          <textarea class="form-control" placeholder="Please comment here"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Dropdown</label>
+          <select class="form-control">
+            <option value="male">option 1</option>
+            <option value="female">option 2</option>
+            <option value="other">option 3</option>
+          </select>
+        </div>
+		<br>
+		<h4> FILE UPLOAD </h4><br>
+        <div class="form-group">
+          <label>Upload File</label>
+          <input type="file">
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Check me out
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+     </div>
+   </div>
+
+   <hr>
+
+   <!-- TABLES -->
+    <div class="container">
+	<h3> NOW LET'S DO SOME TABLES </h3><br>
+      <table class="table table-striped table-bordered table-hover table-condensed">
+        <tr>
+          <th>NAME</th>
+          <th>AGE</th>
+          <th>SEX</th>
+		  <th>POPULARITY</th>
+        </tr>
+        <tr class="danger">
+          <td>TOM</td>
+          <td>10</td>
+          <td>MALE</td>
+		  <td>CARTOON NETWORK</td>
+        </tr>
+        <tr>
+          <td>JERRY</td>
+          <td>10</td>
+          <td>MALE</td>
+		  <td>CARTOON NETWORK</td>
+        </tr>
+        <tr class="success">
+          <td>DORAEMON</td>
+          <td>8</td>
+          <td>MALE</td>
+		  <td>HUNGAMA TV</td>
+        </tr>
+        <tr>
+          <td>SHIZUKA</td>
+          <td>12</td>
+          <td>FEMALE</td>
+		  <td>HUNGAMA TV</td>
+        </tr>
+        <tr>
+          <td>SOMETHING</td>
+          <td>SOMETHING</td>
+          <td>SOMETHING</td>
+		  <td>SOMETHING</td>
+        </tr>
+      </table>
+    </div>
+
+    <hr>
+
+    <!-- USE OF LIST GROUP -->
+      <div class="list-group">
+          <a href="#" class="list-group-item active">option 1</a>
+          <a href="#" class="list-group-item">option 2</a>
+          <a href="#" class="list-group-item list-group-item-success">option 3</a>
+          <a href="#" class="list-group-item disabled">option 4</a>
+        </div>
+    </div>
+
+    <div class="container">
+      <!-- ALERTS -->
+      <div class="alert alert-success" role="alert">SUCCESS ALERT</div>
+      <div class="alert alert-info" role="alert">INFO ALERT</div>
+      <div class="alert alert-warning" role="alert">WARNING ALERT</div>
+      <div class="alert alert-danger" role="alert">DANGER ALERT</div>
+
+      <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+        PLEASE CLOSE IT IF YOU DON'T WANT IT.(RELOAD TO BRING IT BACK.)
+      </div>
+
+      <!-- PROGRESS BARS -->
+		
+      <div class="progress">
+      <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width:25%;">
+          25%
+      </div>
+	  </div>
+	  <div class="progress">
+	  <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width:50%;">
+          50%
+      </div>
+	  </div>
+	  <div class="progress">
+	  <div class="progress-bar progress-bar-info progress-bar-striped active" style="width:75%;">
+          75%
+      </div>
+	  </div>
+	  <div class="progress">
+	  <div class="progress-bar progress-bar-success progress-bar-striped active" style="width:100%;">
+          100%
+      </div>
+      </div>
+
+      <hr>
+      <!-- LABELS -->
+      <h1>Hello <span class="label label-primary">Primary</span></h1> &emsp;<hr>
+      <span class="label label-success">Success</span> &emsp;
+      <span class="label label-info">Info</span> &emsp;
+      <span class="label label-warning">Warning</span> &emsp;
+      <span class="label label-danger">Danger</span> &emsp;
+
+	  <hr>
+	  
+      <!-- BADGES -->
+      <a href="#">Inbox <span class="badge">50</span></a> &emsp;
+
+      <button class="btn btn-primary" type="button">
+        Messages <span class="badge">2</span>
+      </button>
+    </div>
+	
+	<hr>
+
+    <!-- GRIDS -->
+    <div class="container">
+	<h3>USING GRIDS IN BOOTSTRAP </h3><br>
+      <div class="row">
+        <div class="col-xs-7 col-sm-7 col-md-7 col-sm-7 col-xs-7" style="border:3px solid red">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-sm-4 col-xs-4" style="border:3px solid red;float:right">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+        </div>
+      </div>
+      <br>
+
+	  <hr>
+		
+	  <!-- PAGE NAVIGATION -->
+	  <h4>PAGE NAVIGATION </h4>
+	  <nav aria-label="Page navigation example">
+		<ul class="pagination">
+		<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+		<li class="page-item"><a class="page-link" href="#">1</a></li>
+		<li class="page-item"><a class="page-link" href="#">2</a></li>
+		<li class="page-item"><a class="page-link" href="#">3</a></li>
+		<li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</ul>
+	  </nav>
+
+		<hr>
+	  
+      <div class="row">
+        <div id="box" class="col-md-1">
+          <h4>Box 1</h4>
+        </div>
+        <div id="box" class="col-md-1">
+          <h4>Box 2</h4>
+        </div>
+        <div id="box" class="col-md-1">
+          <h4>Box 3</h4>
+        </div>
+        <div id="box" class="col-md-1">
+          <h4>Box 4</h4>
+        </div>
+        <div id="box" class="col-md-1">
+          <h4>Box 5</h4>
+        </div>
+        <div id="box" class="col-md-1">
+          <h4>Box 6</h4>
+        </div>
+        <div id="box" class="col-md-1">
+          <h4>Box 7</h4>
+        </div>
+        <div id="box" class="col-md-1">
+          <h4>Box 8</h4>
+        </div>
+        <div id="box" class="col-md-1">
+          <h4>Box 9</h4>
+        </div>
+        <div id="box" class="col-md-1">
+          <h4>Box 10</h4>
+        </div>
+        <div id="box" class="col-md-1">
+          <h4>Box 11</h4>
+        </div>
+        <div id="box" class="col-md-1">
+          <h4>Box 12</h4>
+        </div>
+      </div>
+    </div><br><br>
+	
+
+    <!-- For bootstrap javascript plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+  </body>
+</html>
